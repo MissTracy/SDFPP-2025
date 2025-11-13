@@ -4,20 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
   </head>
-  <body>
-    <header>
+  <body >
+    <body >
+
+
+    <header class="grid grid-cols-1 md:grid-cols-3 items-center gap-6 p-6 bg-gray-50 bg-gray-300">
+
+      <!-- seperated items, broke grid into 3-->
+
+      <div class="flex justify-center md:col-span-1  border border-gray-300 ">
       <img src="images/me.jpeg" alt="A picture of Tracy Lethoko" width="150" />
+      </div>
+
+      <div class=" md:col-span-2 border border-gray-300">
       <h1>Tracy Lethoko</h1>
-      <p>
+      <p class="bg-white rounded">
         Hello! I'm Tacy Lethoko. I'm passionate about web development and
         design. I love intuative, minimalist yet beautiful designs
       </p>
+      </div>
     </header>
 
     
     <!-- skills and prof together -->
-    <section id="proficiency">
+    <section id="proficiency" class="bg-white rounded" >
       <h2>Proficiency</h2>
       <p>HTML: 90%</p>
       <p>CSS: 80%</p>
@@ -26,7 +39,7 @@
       <p>Python: 50%</p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="bg-white rounded">
       <h2>Skills  </h2>
       <ul>
         <li>Web Development</li>
@@ -46,7 +59,7 @@
 
     <!-- project header center, heart like option to add on hover -->
     <article>
-      <section id="Projects">
+      <section id="Projects" class="bg-white rounded">
         <h2>Projects</h2>
         <p>2025</p>
         <p>Wedding website</p>
@@ -67,7 +80,7 @@
     </article>
 
     <article>
-      <section id="Projects">
+      <section id="Projects" >
         <p>2025</p>
         <p>Wedding website</p>
         <p>
@@ -87,7 +100,7 @@
     </article>
 
     <article>
-      <section id="Projects">
+      <section id="Projects" >
         <p>2025</p>
         <p>Wedding website</p>
         <p>
@@ -107,7 +120,7 @@
     </article>
 
     <article>
-      <section id="Projects">
+      <section id="Projects" >
         <p>2025</p>
         <p>Wedding website</p>
         <p>
@@ -127,7 +140,7 @@
     </article>
 
     <article>
-      <section id="Projects">
+      <section id="Projects" >
         <p>2025</p>
         <p>Wedding website</p>
         <p>
@@ -148,7 +161,7 @@
 
 
     <!-- Education and tools in same -->
-    <section>
+    <section class="bg-white rounded">
       <h2>Education</h2>
 
       <article>
