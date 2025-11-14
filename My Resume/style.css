@@ -54,3 +54,29 @@ body {
   padding: 1.5rem;
   border-radius: 1.5rem;
 }
+
+.Projects {
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.Projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.projgrid_items {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
