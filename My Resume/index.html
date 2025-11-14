@@ -4,63 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="style.css">
 
   </head>
-  <body >
-    <body >
+  <body class="container">
 
+    <header>
 
-    <header class="grid grid-cols-1 md:grid-cols-3 items-center gap-6 p-6 bg-gray-50 bg-gray-300">
-
-      <!-- seperated items, broke grid into 3-->
-
-      <div class="flex justify-center md:col-span-1  border border-gray-300 ">
-      <img src="images/me.jpeg" alt="A picture of Tracy Lethoko" width="150" />
+      <div class="profile-image">
+      <img src="images/me.jpeg" alt="A picture of Tracy Lethoko" />
       </div>
 
-      <div class=" md:col-span-2 border border-gray-300">
+      <div class="headliner" >
       <h1>Tracy Lethoko</h1>
-      <p class="bg-white rounded">
+      <p class="intro">
         Hello! I'm Tacy Lethoko. I'm passionate about web development and
+        design. I love intuative, minimalist yet beautiful designs Hello! I'm 
+        Tacy Lethoko. I'm passionate about web development and
         design. I love intuative, minimalist yet beautiful designs
       </p>
       </div>
+
     </header>
 
     
     <!-- skills and prof together -->
-    <section id="proficiency" class="bg-white rounded" >
-      <h2>Proficiency</h2>
-      <p>HTML: 90%</p>
-      <p>CSS: 80%</p>
-      <p>JavaScript: 70%</p>
-      <p>Java: 60%</p>
-      <p>Python: 50%</p>
-    </section>
+   <div class="proskills_container">
+      <section class="proskills_items">
+        <h2>Proficiency</h2>
+        <p>HTML: 90%</p>
+        <p>CSS: 80%</p>
+        <p>JavaScript: 70%</p>
+        <p>Java: 60%</p>
+        <p>Python: 50%</p>
+      </section>
 
-    <section id="skills" class="bg-white rounded">
-      <h2>Skills  </h2>
-      <ul>
-        <li>Web Development</li>
-        <li>UI/UX Design</li>
-        <li>Fullstack Development</li>
-        <li>Database Management</li>
-        <li>SEO Optimization</li>
-        <li>Agile</li>
-        <li>RESTful APIs</li>
-        <li>Git & Version Control</li>
-        <li>UI/UX Design</li>
-        <li>Responsive Design</li>
-        <li>Problem Solving</li>
-        <li>Team Collaboration</li>
-      </ul>
-    </section>
+      <section class="proskills_items">
+        <h2>Skills</h2>
+        <p>
+          Web Development, UI/UX Design, Fullstack, Database Management,
+          SEO Optimization, Agile, APIs, Git, Responsive Design
+        </p>
+      </section>
+    </div>
+    <!-- skills and prof end -->
+
+
 
     <!-- project header center, heart like option to add on hover -->
     <article>
-      <section id="Projects" class="bg-white rounded">
-        <h2>Projects</h2>
+      <section id="Projects" >
+        <h2 >Projects</h2>
+
+        <div>
+
         <p>2025</p>
         <p>Wedding website</p>
         <p>
@@ -79,6 +77,7 @@
       </section>
     </article>
 
+    
     <article>
       <section id="Projects" >
         <p>2025</p>
@@ -138,31 +137,13 @@
         </p>
       </section>
     </article>
-
-    <article>
-      <section id="Projects" >
-        <p>2025</p>
-        <p>Wedding website</p>
-        <p>
-          Brief:Contrary to popular belief, Lorem Ipsum is not simply random
-          text. It has roots in a piece of classical Latin literature from 45
-          BC, making it over 2000 years old.
-          <br />
-          <br />
-          Technologies:HTML, CSS, JAVA
-          <br />
-          <br />
-          Responsibilities: Contrary to popular belief, Lorem Ipsum is not
-          simply random text. It has roots in a piece of classical Latin
-          literature from 45 BC, making it over 2000 years old.
-        </p>
-      </section>
-    </article>
+  </div>
+    
 
 
     <!-- Education and tools in same -->
     <section class="bg-white rounded">
-      <h2>Education</h2>
+      <h2 class="font-bold">Education</h2>
 
       <article>
         <p>may, 2025 - may, 2025</p>
@@ -200,7 +181,7 @@
         </ul>
       </article>
 
-      <h2>Tools</h2>
+      <h2 class="font-bold">Tools</h2>
 
       <p>Languages</p>
       <img
