@@ -1,8 +1,7 @@
 .container {
-  padding: 2rem;
-  max-width: 1200px;
+  max-width: 850px;
   margin: 0 auto;
-  box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 .profile-image img {
@@ -16,9 +15,14 @@ header {
   display: grid;
   grid-template-columns: 10rem 1fr;
   gap: 1.5rem;
-  padding: 2rem;
-  border-radius: 1.5rem;
+  /* padding: 2rem; */
+  border-radius: 0.5rem;
   align-items: center;
+}
+
+.headliner h1 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 body {
@@ -29,7 +33,7 @@ body {
   background: white;
   border-radius: 1.5rem;
   height: 8rem;
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,9 +48,9 @@ body {
 
 .proskills_container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   gap: 1.5rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .proskills_items {
@@ -54,10 +58,96 @@ body {
   padding: 1.5rem;
   border-radius: 1.5rem;
 }
+
+.skill {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #333;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.skills_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.skills_list span {
+  background: #f0f0f0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.6rem;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* ==========* SKills bar *=================== */
+
+.skill {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.skill-bar {
+  width: 50%;
+  height: 10px;
+  background: #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background: #4a8b70;
+  border-radius: 10px;
+}
+
+.css {
+  width: 80%;
+}
+
+.html {
+  width: 80%;
+}
+
+.java {
+  width: 90%;
+}
+
+.javascript {
+  width: 75%;
+}
+
+.python {
+  width: 75%;
+}
+
 /* ==========* Projects *=================== */
 
 .Projects {
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   padding: 2rem;
 }
 
@@ -74,12 +164,20 @@ body {
 }
 
 .projgrid_items {
-  background: white;
+  background: #e7f0ec;
   padding: 1.5rem;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  position: relative;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.projects-grid article:first-of-type {
+  background-color: #4a8b70;
+  color: white;
 }
 
 section {
@@ -90,43 +188,73 @@ section {
   box-sizing: border-box;
 }
 
+.projgrid_items .heart-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #ff5a5f;
+}
+
+/* .projgrid_items:hover {
+  background: #4a8b70;
+  color: white;
+} */
 /* ==========* Education *=================== */
 
 .edutool_wrapper {
   display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  margin: 2rem 0;
+  align-items: stretch;
+  /* gap between toold and edu */
+  gap: 1rem;
 }
 
 .education {
-  flex: 2;
   display: flex;
   flex-direction: column;
+  /* article gap */
   gap: 1.5rem;
+  font-size: 0.9rem;
 }
 
 .education article {
   display: flex;
-  justify-content: space-between;
-  background: white;
-  padding: 1rem;
-  border-radius: 1.5rem;
+  /* gap: 0.5rem; */
+  background: #e7f0ec;
+
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+  flex: unset;
+  height: auto;
+  text-align: start;
+}
+
+.education article:first-of-type {
+  background-color: #4a8b70;
+  color: white;
 }
 
 .edutool_left p,
 .edutool_left h3 {
-  margin: 0.5rem 0;
+  margin: 0;
+  gap: 0rem;
+  padding: 0;
 }
 
-/* ==========* Tools *=================== */
-.tools {
-  flex: 1; /* narrower */
-  display: flex;
+.edutool_left {
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 3rem;
+  flex: 1;
 }
 
+.edutool_right {
+  flex: 3;
+}
+/* ==========* Tools *=================== */
+
+.tools {
+  flex: 1;
+}
 .tools_heading {
   text-align: center;
   font-size: 1.5rem;
@@ -136,16 +264,78 @@ section {
 .tool_item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: auto;
   gap: 0.5rem;
   background: white;
   padding: 1rem;
   border-radius: 1rem;
+  font-size: 0.9rem;
 }
-
 .toolitem_header {
   grid-column: 1 / -1;
   text-align: center;
   font-weight: bold;
   margin-bottom: 0.5rem;
+}
+
+/* ==========* Experience *=================== */
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* margin: 2rem 0; */
+  font-size: 0.9rem;
+}
+
+.experience_heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.experience article {
+  display: flex;
+  /* gap: 5rem; */
+  background: #e7f0ec;
+
+  border-radius: 1rem;
+  /* padding: 1rem;
+   */
+  padding: 0.7rem 1rem;
+  text-align: start;
+}
+
+.experience article:first-of-type {
+  background-color: #4a8b70;
+  color: white;
+}
+
+.experience .edutool_left p,
+.experience .edutool_left h3 {
+  margin: 0;
+}
+
+.experience .edutool_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experience .edutool_right {
+  flex: 3;
+}
+
+.experience .edutool_right ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+/* ==========* Footer *=================== */
+
+footer {
+  background: #d76239;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  color: white;
+  font-size: 0.9rem;
 }

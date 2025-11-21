@@ -4,255 +4,372 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
+
   <body class="container">
-
     <header>
-
       <div class="profile-image">
-      <img src="images/me.jpeg" alt="A picture of Tracy Lethoko" />
+        <img src="images/me.jpeg" alt="A picture of Tracy Lethoko" />
       </div>
 
-      <div class="headliner" >
-      <h1>Tracy Lethoko</h1>
-      <p class="intro">
-        Hello! I'm Tacy Lethoko. I'm passionate about web development and
-        design. I love intuative, minimalist yet beautiful designs Hello! I'm 
-        Tacy Lethoko. I'm passionate about web development and
-        design. I love intuative, minimalist yet beautiful designs
-      </p>
+      <div class="headliner">
+        <h1>Tracy Lethoko</h1>
+        <p class="intro">
+          I am a passionate and dedicated software developer with a strong
+          foundation in JavaScript and React. With hands-on experience in
+          building dynamic and responsive web applications, I excel at
+          transforming complex requirements into intuitive user interfaces.
+        </p>
       </div>
-
     </header>
 
-    
-    <!-- skills and prof together -->
-   <div class="proskills_container">
+    <!-- ================= PRO SKILLS ================= -->
+
+    <div class="proskills_container">
+      <!-- Proficiency bars -->
       <section class="proskills_items">
         <h2>Proficiency</h2>
-        <p>HTML: 90%</p>
-        <p>CSS: 80%</p>
-        <p>JavaScript: 70%</p>
-        <p>Java: 60%</p>
-        <p>Python: 50%</p>
-      </section>
 
-      <section class="proskills_items">
-        <h2>Skills</h2>
-        <p>
-          Web Development, UI/UX Design, Fullstack, Database Management,
-          SEO Optimization, Agile, APIs, Git, Responsive Design
-        </p>
-      </section>
-    </div>
-    <!-- skills and prof end -->
+        <div class="skill">
+          <span class="skill-name">Java</span>
+          <div class="skill-bar">
+            <div class="skill-level java"></div>
+          </div>
+        </div>
 
+        <div class="skill">
+          <span class="skill-name">HTML</span>
+          <div class="skill-bar">
+            <div class="skill-level html"></div>
+          </div>
+        </div>
 
+        <div class="skill">
+          <span class="skill-name">CSS</span>
+          <div class="skill-bar">
+            <div class="skill-level css"></div>
+          </div>
+        </div>
 
-    <!-- project header center, heart like option to add on hover -->
-    <section class="Projects" >
-      <h2 >Projects</h2>
-        <div class="projects-grid">
-   
-            <article class="projgrid_items">
-              <p>2025</p>
-              <p>Wedding website</p>
-              <p>
-                Brief:Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from 45
-                BC, making it over 2000 years old.
-                <br /><br />
-                Technologies:HTML, CSS, JAVA
-                <br /><br>
-                Responsibilities: Contrary to popular belief, Lorem Ipsum is not
-                simply random text. It has roots in a piece of classical Latin
-                literature from 45 BC, making it over 2000 years old.
-              </p>
-            </article>
+        <div class="skill">
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar">
+            <div class="skill-level javascript"></div>
+          </div>
+        </div>
 
-            <article class="projgrid_items">
-              <p>2025</p>
-              <p>Wedding website</p>
-              <p>
-                Brief:Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from 45
-                BC, making it over 2000 years old.
-                <br /><br />
-                Technologies:HTML, CSS, JAVA
-                <br /><br>
-                Responsibilities: Contrary to popular belief, Lorem Ipsum is not
-                simply random text. It has roots in a piece of classical Latin
-                literature from 45 BC, making it over 2000 years old.
-              </p>
-            </article>
-
-            <article class="projgrid_items">
-              <p>2025</p>
-              <p>Wedding website</p>
-              <p>
-                Brief:Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from 45
-                BC, making it over 2000 years old.
-                <br /><br />
-                Technologies:HTML, CSS, JAVA
-                <br /><br>
-                Responsibilities: Contrary to popular belief, Lorem Ipsum is not
-                simply random text. It has roots in a piece of classical Latin
-                literature from 45 BC, making it over 2000 years old.
-              </p>
-            </article>
-
-            <article class="projgrid_items">
-              <p>2025</p>
-              <p>Wedding website</p>
-              <p>
-                Brief:Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from 45
-                BC, making it over 2000 years old.
-                <br /><br />
-                Technologies:HTML, CSS, JAVA
-                <br /><br>
-                Responsibilities: Contrary to popular belief, Lorem Ipsum is not
-                simply random text. It has roots in a piece of classical Latin
-                literature from 45 BC, making it over 2000 years old.
-              </p>
-            </article>
-
+        <div class="skill">
+          <span class="skill-name">Python</span>
+          <div class="skill-bar">
+            <div class="skill-level python"></div>
+          </div>
         </div>
       </section>
-  
-    
 
-  <!-- Education and Tools wrapper -->
-<div class="edutool_wrapper">
+      <!-- ================= Skills List ================= -->
+      <section class="proskills_items">
+        <h2>Skills</h2>
 
-  <!-- Education Section -->
-  <section class="education">
-    <h2 class="edu_heading">Education</h2>
-
-    <article>
-      <div class="edutool_left">
-        <p>May, 2025 - May, 2025</p>
-        <h3>Code Space</h3>
-        <p>Software Development</p>
-        <p>Full-time</p>
-      </div>
-      <div class="edutool_right">
-        <ul>
-          <li>Learned web development fundamentals</li>
-          <li>Worked on mini projects</li>
-          <li>Improved teamwork and communication</li>
-        </ul>
-      </div>
-    </article>
-
-    <article>
-      <div class="edutool_left">
-        <p>May, 2025 - May, 2025</p>
-        <h3>Code Space</h3>
-        <p>Software Development</p>
-        <p>Full-time</p>
-      </div>
-      <div class="edutool_right">
-        <ul>
-          <li>Learned advanced JavaScript</li>
-          <li>Built portfolio projects</li>
-          <li>Worked on collaborative coding</li>
-        </ul>
-      </div>
-    </article>
-
-    <article>
-      <div class="edutool_left">
-        <p>May, 2025 - May, 2025</p>
-        <h3>Code Space</h3>
-        <p>Software Development</p>
-        <p>Full-time</p>
-      </div>
-      <div class="edutool_right">
-        <ul>
-          <li>Learned advanced JavaScript</li>
-          <li>Built portfolio projects</li>
-          <li>Worked on collaborative coding</li>
-        </ul>
-      </div>
-    </article>
-  </section>
-
-  <!-- Tools Section -->
-  <section class="tools">
-    <h2 class="tools_heading">Tools</h2>
-
-    <div class="tool_item">
-      <p class="toolitem_header">Languages</p>
-      <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" alt="Java logo" width="50" height="50"/>
-      <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" alt="Javascript logo" width="50" height="50"/>
-      <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" alt="SQL logo" width="50" height="50"/>
+        <div class="skills_list">
+          <span>Web Development</span>
+          <span>UI/UX Design</span>
+          <span>Fullstack</span>
+          <span>Database Management</span>
+          <span>SEO Optimization</span>
+          <span>Agile</span>
+          <span>APIs</span>
+          <span>Git</span>
+          <span>Responsive Design</span>
+        </div>
+      </section>
     </div>
 
-    <div class="tool_item">
-      <p class="toolitem_header">Design</p>
-      <img src="https://github.com/devicons/devicon/blob/master/icons/photoshop/photoshop-plain.svg" alt="Photoshop logo" width="50" height="50"/>
-      <img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" alt="Figma logo" width="50" height="50"/>
+    <!-- ================= PROJECTS ================= -->
+
+    <section class="Projects">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+        <article class="projgrid_items">
+          <i class="fa fa-heart heart-icon"></i>
+          <p>2025</p>
+          <p>Wedding website</p>
+          <p>
+            Brief: Contrary to popular belief, Lorem Ipsum is not simply random
+            text.
+            <br /><br />
+            Technologies: HTML, CSS, Java
+            <br /><br />
+            Responsibilities: Lorem ipsum dolor sit amet.
+          </p>
+        </article>
+
+        <article class="projgrid_items">
+          <i class="fa fa-heart heart-icon"></i>
+          <p>2025</p>
+          <p>Wedding website</p>
+          <p>
+            Brief: Contrary to popular belief, Lorem Ipsum is not simply random
+            text.
+            <br /><br />
+            Technologies: HTML, CSS, Java
+            <br /><br />
+            Responsibilities: Lorem ipsum dolor sit amet.
+          </p>
+        </article>
+
+        <article class="projgrid_items">
+          <i class="fa fa-heart heart-icon"></i>
+          <p>2025</p>
+          <p>Wedding website</p>
+          <p>
+            Brief: Contrary to popular belief, Lorem Ipsum is not simply random
+            text.
+            <br /><br />
+            Technologies: HTML, CSS, Java
+            <br /><br />
+            Responsibilities: Lorem ipsum dolor sit amet.
+          </p>
+        </article>
+
+        <article class="projgrid_items">
+          <i class="fa fa-heart heart-icon"></i>
+          <p>2025</p>
+          <p>Wedding website</p>
+          <p>
+            Brief: Contrary to popular belief, Lorem Ipsum is not simply random
+            text.
+            <br /><br />
+            Technologies: HTML, CSS, Java
+            <br /><br />
+            Responsibilities: Lorem ipsum dolor sit amet.Responsibilities: Lorem
+            ipsum dolor sit ametResponsibilities: Lorem ipsum dolor sit amet
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION + TOOLS ================= -->
+    <div class="edutool_wrapper">
+      <!-- Education -->
+      <section class="education">
+        <h2 class="edu_heading">Education</h2>
+
+        <article>
+          <div class="edutool_left">
+            <p>May, 2025 - May, 2025</p>
+            <h3>Code Space</h3>
+            <p>Software Development</p>
+            <p>Full-time</p>
+          </div>
+          <div class="edutool_right">
+            <ul>
+              <li>
+                Focused on React and JavaScript to build dynamic web
+                applications
+              </li>
+              <li>Collaborated on real-world projects</li>
+              <li>Gained hands-on experience with web technologies</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="edutool_left">
+            <p>May, 2025 - May, 2025</p>
+            <h3>Code Space</h3>
+            <p>Software Development</p>
+            <p>Full-time</p>
+          </div>
+          <div class="edutool_right">
+            <ul>
+              <li>
+                Focused on React and JavaScript to build dynamic web
+                applications
+              </li>
+              <li>Collaborated on real-world projects</li>
+              <li>Gained hands-on experience with web technologies</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="edutool_left">
+            <p>May, 2025 - May, 2025</p>
+            <h3>Code Space</h3>
+            <p>Software Development</p>
+            <p>Full-time</p>
+          </div>
+          <div class="edutool_right">
+            <ul>
+              <li>
+                Focused on React and JavaScript to build dynamic web
+                applications React and JavaScript to build dynamic web
+                applications
+              </li>
+              <li>Collaborated on real-world projects</li>
+              <li>Gained hands-on experience with web technologies</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- Tools -->
+      <section class="tools">
+        <h2 class="tools_heading">Tools</h2>
+
+        <div class="tool_item">
+          <p class="toolitem_header">Languages</p>
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+            width="50"
+            height="50"
+            alt=""
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+            width="50"
+            height="50"
+            alt=""
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+            width="50"
+            height="50"
+            alt=""
+          />
+
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+            width="50"
+            height="50"
+            alt=""
+          />
+        </div>
+
+        <div class="tool_item">
+          <p class="toolitem_header">Design</p>
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-plain.svg"
+            width="50"
+            height="50"
+            alt=""
+          />
+
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/wordpress/wordpress-original.svg"
+            width="50"
+            height="50"
+            alt=""
+          />
+        </div>
+
+        <div class="tool_item">
+          <p class="toolitem_header">Tools</p>
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
+            width="50"
+            height="50"
+            alt=""
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+            width="50"
+            height="50"
+            alt=""
+          />
+
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
+            width="50"
+            height="50"
+            alt=""
+          />
+
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/intellij/intellij-original.svg"
+            width="50"
+            height="50"
+            alt=""
+          />
+        </div>
+      </section>
     </div>
 
-    <div class="tool_item">
-      <p class="toolitem_header">Tools</p>
-      <img src="https://github.com/devicons/devicon/blob/master/icons/photoshop/photoshop-plain.svg" alt="Photoshop logo" width="50" height="50"/>
-      <img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" alt="Figma logo" width="50" height="50"/>
-    </div>
-  </section>
-</div>
+    <!-- ================= Experiance ================= -->
 
-
-
-    <!-- experiance alone, top right button "most recent" to add-->
-    <section>
-      <h2>Experience</h2>
+    <section class="experience">
+      <h2 class="experience_heading">Experience</h2>
 
       <article>
-        <p>may, 2025 - may, 2025</p>
-        <h3>Code spacee</h3>
-        <p>software development</p>
-        <p>sfull-time</p>
-        <ul>
-          <li>Learned web development fundamentals</li>
-          <li>Learned web development fundamentals</li>
-          <li>Learned web development fundamentals</li>
-        </ul>
+        <div class="edutool_left">
+          <p>May, 2025 - May, 2025</p>
+          <h3>Code Space</h3>
+          <p>Software Development</p>
+          <p>Full-time</p>
+        </div>
+        <div class="edutool_right">
+          <ul>
+            <li>Learned web development fundamentals</li>
+            <li>Worked on team projects using React & JavaScript</li>
+            <li>Gained experience with web technologies</li>
+          </ul>
+        </div>
       </article>
 
-        <article>
-        <p>may, 2025 - may, 2025</p>
-        <h3>Code spacee</h3>
-        <p>software development</p>
-        <p>sfull-time</p>
-        <ul>
-          <li>Learned web development fundamentals</li>
-          <li>Learned web development fundamentals</li>
-          <li>Learned web development fundamentals</li>
-        </ul>
+      <article>
+        <div class="edutool_left">
+          <p>Jan, 2025 - Apr, 2025</p>
+          <h3>Another Company</h3>
+          <p>Frontend Developer</p>
+          <p>Part-time</p>
+        </div>
+        <div class="edutool_right">
+          <ul>
+            <li>Developed responsive UI components</li>
+            <li>Collaborated in Agile sprints</li>
+            <li>Maintained codebase with Git</li>
+          </ul>
+        </div>
       </article>
 
-        <article>
-        <p>may, 2025 - may, 2025</p>
-        <h3>Code spacee</h3>
-        <p>software development</p>
-        <p>sfull-time</p>
-        <ul>
-          <li>Learned web development fundamentals</li>
-          <li>Learned web development fundamentals</li>
-          <li>Learned web development fundamentals</li>
-        </ul>
+      <article>
+        <div class="edutool_left">
+          <p>Jan, 2025 - Apr, 2025</p>
+          <h3>Another Company</h3>
+          <p>Frontend Developer</p>
+          <p>Part-time</p>
+        </div>
+        <div class="edutool_right">
+          <ul>
+            <li>Developed responsive UI components</li>
+            <li>Collaborated in Agile sprints</li>
+            <li>Maintained codebase with Git</li>
+          </ul>
+        </div>
       </article>
+    </section>
 
     <footer>
-      <h2>Lets chat IM ready to work on exciting projects.</h2>
-      <p>lethoko.tracy@gmail.com |  0658090739   | linkein link | Github link</p>
-      <p>&copy;2025 Tracy Lethoko. All rights reserved.</p>
+      <h2>Let's chat, I'm ready to work on exciting projects.</h2>
+      <p>
+        lethoko.tracy@gmail.com | 0658090739 |
+        <a
+          href="https://www.linkedin.com/in/tracylethoko/"
+          target="_blank"
+          class="linkedin"
+          >LinkedIn</a
+        >
+        |
+        <a href="https://github.com/misstracy" target="_blank" class="github"
+          >Github</a
+        >
+      </p>
     </footer>
   </body>
 </html>
