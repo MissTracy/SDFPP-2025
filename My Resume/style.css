@@ -15,7 +15,6 @@ header {
   display: grid;
   grid-template-columns: 10rem 1fr;
   gap: 1.5rem;
-  /* padding: 2rem; */
   border-radius: 0.5rem;
   align-items: center;
   font-size: 0.9rem;
@@ -65,9 +64,9 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .skill-name {
@@ -76,7 +75,7 @@ body {
   display: block;
   color: #333;
   margin: 0;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .skills_list {
@@ -93,6 +92,17 @@ body {
   font-size: 0.9rem;
   color: #333;
   font-weight: 500;
+}
+.description {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.skill-description {
+  font-weight: 600;
+  color: #333;
 }
 
 /* ==========* SKills bar *=================== */
@@ -155,7 +165,6 @@ body {
 .Projects h2 {
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 2rem;
 }
 
 .projects-grid {
@@ -197,10 +206,6 @@ section {
   color: #ff5a5f;
 }
 
-/* .projgrid_items:hover {
-  background: #4a8b70;
-  color: white;
-} */
 /* ==========* Education *=================== */
 
 .edutool_wrapper {
@@ -213,16 +218,13 @@ section {
 .education {
   display: flex;
   flex-direction: column;
-  /* article gap */
   gap: 1.5rem;
-  font-size: 0.9rem;
 }
 
 .education article {
   display: flex;
-  /* gap: 0.5rem; */
   background: #e7f0ec;
-
+  position: relative;
   padding: 0.7rem 1rem;
   border-radius: 1rem;
   flex: unset;
@@ -251,27 +253,31 @@ section {
 .edutool_right {
   flex: 3;
 }
+
+.edu_heading {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 /* ==========* Tools *=================== */
 
 .tools {
   flex: 1;
-  /* gap: 5rem; */
 }
 .tools_heading {
   text-align: center;
-  font-size: 1.5rem;
-  /* margin-bottom: 1rem; */
 }
 
 .tool_item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
   background: #e7f0ec;
-  /* padding: 1rem; */
+  padding: 1rem;
   border-radius: 1rem;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
+
+  gap: 1rem;
 }
 .toolitem_header {
   grid-column: 1 / -1;
@@ -298,12 +304,9 @@ section {
 
 .experience article {
   display: flex;
-  /* gap: 5rem; */
   background: #e7f0ec;
 
   border-radius: 1rem;
-  /* padding: 1rem;
-   */
   padding: 0.7rem 1rem;
   text-align: start;
 }
@@ -311,6 +314,10 @@ section {
 .experience article:first-of-type {
   background-color: #4a8b70;
   color: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr auto;
+  gap: 1rem;
+  position: relative;
 }
 
 .experience .edutool_left p,
@@ -344,6 +351,15 @@ footer {
   color: white;
   font-size: 0.9rem;
 }
+
+/* h2 styling */
+h2 .experience_heading .Projects h2 .Projects h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
 /* ===================Mobile====================== */
 
 @media (max-width: 600px) {
@@ -375,7 +391,6 @@ footer {
 
   .proskills_items:nth-child(2) {
     order: 2;
-    /* margin-bottom: 1rem; */
     margin-top: 0;
   }
 
@@ -397,22 +412,44 @@ footer {
     margin-bottom: 1rem;
   }
   /* ==============Tool============= */
+
+  .tools {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .tools_heading {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
   .tool_item {
     display: grid;
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.3rem;
+    align-items: center;
+    justify-items: center;
   }
 
   .tool_item img {
-    width: 3rem;
-    height: 3rem;
+    width: 2.8rem;
+    height: 2.8rem;
     padding: 0;
+    display: flex;
+  }
+  .toolitem_header {
+    grid-column: 1 / -1;
   }
 
   /* ==============Education============= */
   .edutool_wrapper {
+    display: flex;
     flex-direction: column;
+    gap: 1rem;
+  }
+  .edutool_left {
+    grid-column: 1 / 2;
   }
 
   /* ========== Experience ========== */
@@ -423,12 +460,30 @@ footer {
   /* ========== Skill ========== */
   .skill {
     display: grid;
-    grid-template-columns: 5rem 1fr; /* SAME AS DESKTOP */
+    grid-template-columns: 5rem 1fr;
     align-items: center;
     gap: 1rem;
   }
 
   .skill-bar {
     width: 100%;
+  }
+  .headliner,
+  .proskills_items,
+  .Projects,
+  .tools,
+  .education,
+  .experience {
+    padding: 1rem;
+  }
+
+  .description {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .skill-description {
+    margin: 0;
   }
 }
